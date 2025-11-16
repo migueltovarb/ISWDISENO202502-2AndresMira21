@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module INVENTARIO_SUPERMERCADO {
+}
