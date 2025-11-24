@@ -1,15 +1,15 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://andresestrada0630_db_user:prestamosDeportivos@prestamos.aygd11w.mongodb.net/?retryWrites=true&w=majority&appName=prestamos
-      database: prestamos
+      uri: ${SPRING_DATA_MONGODB_URI:mongodb+srv://andresestrada0630_db_user:prestamosDeportivos@prestamos.aygd11w.mongodb.net/?retryWrites=true&w=majority&appName=prestamos}
+      database: ${SPRING_DATA_MONGODB_DATABASE:prestamos}
 
 server:
-  port: 8080
+  port: ${SERVER_PORT:8080}
 
 jwt:
-  secret: PMkh0Vxta3KLaGc0tLnLteh+M$/vq^Na#icp3yZKbD0=
-  expiration: 7200000
+  secret: ${JWT_SECRET:PMkh0Vxta3KLaGc0tLnLteh+M$/vq^Na#icp3yZKbD0=}
+  expiration: ${JWT_EXPIRATION:7200000}
 
 logging:
   level:
